@@ -7,7 +7,7 @@
   overflow: hidden;
   
   font-family: helvetica;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@
 
 .backbutton a {
 	text-decoration: none;
-	color: white
+	color: black
 }
 
 .backbutton:hover {
@@ -58,7 +58,7 @@
 
 .specificinfobox {
 	position: absolute;
-	top: 320px;
+	top: 290px;
 	left: 12px;
 	width: 320px;
 	height: 150px;
@@ -69,7 +69,7 @@
 
 .foodbox {
 	position: absolute;
-	top: 410px;
+	top: 390px;
 	left: 12px;
 	width: 320px;
 	height: 150px;
@@ -82,12 +82,12 @@
 .reportbutton {
 	position: absolute;
 	left: 35px;
-	top: 520px;
+	top: 500px;
 	width: 300px;
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 20px;
 	border-radius: 4px;
@@ -101,12 +101,12 @@
 .foodbutton {
 	position: absolute;
 	left: 230px;
-	top: 420px;
+	top: 400px;
 	width: 100px;
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 16px;
 	border-radius: 4px;
@@ -117,7 +117,121 @@
 	color: black;
 }
 
+.schedulebutton {
+	position: absolute;
+	left: 35px;
+	top: 560px;
+	width: 300px;
+	height: 50px;
+	background-color: #CDCDCD;
+	border: 4px solid #E9E9E9;
+	color: black;
+	font-family: helvetica;
+	font-size: 16px;
+	border-radius: 4px;
+}
 
+.schedulebutton:hover {
+	background-color: #E9E9E9;
+	color: black;
+}
+
+
+
+
+/*   SCHEDULE AFTER SCHOOL   */
+
+
+.sas-daysbox {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	left: 18px;
+	font-size: 20px;
+	text-align: left;
+	line-height: 20px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas-header {
+	width: 340px;
+	height: 50px;
+	position: absolute;
+	top: 40px;
+	left: 18px;
+	font-size: 26px;
+	text-align: left;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas-buttonbox1 {
+	position: absolute;
+	top: 170px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas-buttonbox2 {
+	position: absolute;
+	top: 210px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas-buttonbox3 {
+	position: absolute;
+	top: 250px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas-buttonbox4 {
+	position: absolute;
+	top: 290px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas-buttonbox5 {
+	position: absolute;
+	top: 330px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas-dropoff {
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	top: 115px;
+	left: 170px;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas-pickup {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 115px;
+	left: 255px;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
 
 
 
@@ -152,7 +266,7 @@
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 20px;
 	border-radius: 4px;
@@ -259,7 +373,7 @@
 	text-decoration: none;
 	font-size: 20px;
 	font-family: helvetica;
-    color: white;
+    color: black;
 }
 
 .child1:hover {
@@ -284,7 +398,7 @@
 	text-decoration: none;
 	font-size: 20px;
 	font-family: helvetica;
-    color: white;
+    color: black;
 }
 
 .child2:hover {
@@ -309,7 +423,7 @@
 	text-decoration: none;
 	font-size: 20px;
 	font-family: helvetica;
-    color: white;
+    color: black;
 }
 
 .child3:hover {
@@ -375,7 +489,7 @@
 	height: 50px;
     background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 12px;
 	border-radius: 4px;
@@ -433,13 +547,13 @@ th, td{
 
 
 table a {
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding: 5px;
 }
 
 table a:hover {
-  color: white;
+  color: black;
   padding: 5px;
   border-radius: 50px;
   background-color: #99D3Df;
@@ -458,7 +572,7 @@ table a:hover {
 
 .addappointment a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-size: 55px;
 }
 
@@ -544,7 +658,7 @@ table a:hover {
   width: 18px;
   left: 2px;
   bottom: 2px;
-  background-color: white;
+  background-color: black;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -612,7 +726,7 @@ input:checked + .slider:before {
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 20px;
 	border-radius: 4px;
@@ -648,7 +762,7 @@ input:checked + .slider:before {
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 20px;
 	border-radius: 4px;
@@ -718,7 +832,7 @@ input:checked + .slider:before {
 	height: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
-	color: white;
+	color: black;
 	font-family: helvetica;
 	font-size: 20px;
 	border-radius: 4px;
@@ -748,7 +862,7 @@ input:checked + .slider:before {
 
 .navbar a {
 	text-decoration: none;
-	color: white; 
+	color: black; 
 }
 
 .navbarleft {
