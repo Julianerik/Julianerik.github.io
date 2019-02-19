@@ -42,9 +42,33 @@
 	border-radius: 50px;
 }
 
+.homebutton {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	left: 160px;
+	padding: 5px 5px 5px 4px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.homebutton a {
+	text-decoration: none;
+	color: black
+}
+
+.homebutton:hover {
+	background-color: #88BBD6;
+	border-radius: 50px;
+}
 
 
-/*   INDEX   */
+
+
+
+
+/* --------------------------------------------  INDEX     ----------------------------------------------  */
 .generalinfobox {
 	position: absolute;
 	top: 150px;
@@ -139,7 +163,7 @@
 
 
 
-/*   SCHEDULE AFTER SCHOOL   */
+/* ------------------------------------------  SCHEDULE AFTER SCHOOL -------------------  */
 
 
 .sas-daysbox {
@@ -234,8 +258,160 @@
 }
 
 
+/* ----------------------------------  SCHEDULE AFTER SCHOOL ALL KIDS ------------------------  */
 
-/* LOGIN */
+.sas2-selectbox {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	left: 12px;
+}
+
+.sas2-selectbox select {
+	font-family: helvetica;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #E9E9E9;
+}
+
+
+
+.sas2-daysbox {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 225px;
+	left: 18px;
+	font-size: 20px;
+	text-align: left;
+	line-height: 20px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas2-header {
+	width: 340px;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: 18px;
+	font-size: 26px;
+	text-align: left;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas2-buttonbox1 {
+	position: absolute;
+	top: 245px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas2-buttonbox2 {
+	position: absolute;
+	top: 285px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas2-buttonbox3 {
+	position: absolute;
+	top: 325px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas2-buttonbox4 {
+	position: absolute;
+	top: 365px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas2-buttonbox5 {
+	position: absolute;
+	top: 405px;
+	left: 110px;
+	width: 50px;
+	height: 50px;
+}
+
+.sas2-dropoff {
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	top: 190px;
+	left: 170px;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas2-pickup {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 190px;
+	left: 255px;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	padding: 0px 0px 20px 5px;
+	margin: auto;
+}
+
+.sas2-pickup-messagebox {
+	width: 280px;
+	height: 250px;
+	position: absolute;
+	left: 45px;
+	top: 225px;
+}
+
+.sas2-pickup-messagebox input {
+	width: 250px;
+	height: 40px;
+	border: 2px solid #E9E9E9;
+	font-family: helvetica;
+	color: #E9E9E9;
+	border-radius: 4px;
+}
+
+.sas2-pickup-messagebox button {
+	position: absolute;
+	top: 255px;
+	left: 0px;
+	width: 280px;
+	height: 50px;
+	background-color: #CDCDCD;
+	border: 4px solid #E9E9E9;
+	color: black;
+	font-family: helvetica;
+	font-size: 20px;
+	border-radius: 4px;
+}
+
+.sas2-pickup-messagebox button:hover {
+	background-color: #E9E9E9;
+	color: black;
+}
+
+
+
+
+
+
+
+
+/*  ------------------------------ LOGIN ------------------------------*/
 
 .logintext {
 	position: absolute;
@@ -280,7 +456,7 @@
 
 
 
-/* MESSAGES */
+/*   -------------------------- MESSAGES ------------------------- */
 
 .readbox1 {
 	position: absolute;
@@ -318,6 +494,10 @@
 	font-size: 14px;
 }
 
+.messagebox1:hover {
+	background-color: #E9E9E9;
+}
+
 .leftbox {
 	width: 220px;
 	height: 100px;
@@ -348,13 +528,79 @@
 	font-size: 14px;
 }
 
+.messagebox2:hover {
+	background-color: #E9E9E9;
+}
+
+.nodecoration {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/* För popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #CDCDCD;
+  border-color: #E9E9E9;
+  width: 280px;
+  height: 450px;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px 5px 4px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.popup .close:hover {
+	background-color: #88BBD6;
+	border-radius: 50px;
+}
+.popup .content {
+  position: absolute;
+  top: 50px;
+}
 
 
 
 
 
 
-/* MY CHILDREN*/
+
+
+
+
+/*          ----------------------------- MY CHILDREN   ---------------------   */
 .child1 {
 	background-color: #CDCDCD;
 	position: absolute;
@@ -448,7 +694,7 @@
 
 
 
-/*   CHILD   */
+/*     -------------------------    CHILD  -------------------------------  */
 
 .presentationbox {
 	position: absolute;
@@ -480,7 +726,7 @@
 	top: 340px;
 	left: 18px;
 	width: 340px;
-	height: 50px;
+	height: 104px;
 }
 
 .child-buttonbox button {
@@ -493,9 +739,29 @@
 	font-family: helvetica;
 	font-size: 12px;
 	border-radius: 4px;
-	padding: 2px;
-	margin: 0px 0px 0px 10px;
+	padding: 4px;
+	margin: 10px 0px 0px 10px;
 }
+
+#childbutton2 {
+	float: left;
+	width: 155px;
+	height: 50px;
+    background-color: #CDCDCD;
+	border: 4px solid #E9E9E9;
+	color: black;
+	font-family: helvetica;
+	font-size: 12px;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 10px 0px 0px 10px;
+}
+
+#childbutton2:hover {
+	background-color: #E9E9E9;
+	color: black;
+}
+
 
 .child-buttonbox button:hover {
 	background-color: #E9E9E9;
@@ -504,14 +770,17 @@
 
 
 
-/*  SCHEDULE   */
+/* ------------------------------------- SCHEDULE  -------------------------------- */
 
 .tablebox {
-	background-color: #CDCDCD;
+
 	margin: auto; 
+	position: absolute; 
+	top: 40px;
+	left: 35px;
 	width: 300px;
 	height: 350px;
-	padding: 10px;
+	padding: 0px;
 }
 
 .lastmonth {
@@ -519,7 +788,6 @@
 }
 
 #contentbox {
-	background-color: #CDCDCD;
 	position: absolute;
 	top: 400px;
 	width: 340px;
@@ -564,7 +832,7 @@ table a:hover {
 	height: 60px;
 	position: absolute;
 	left: 270px;
-	bottom: 60px; 
+	top: 520px; 
 	border-radius: 50px;
 	background-color: #CDCDCD;
 	border: 4px solid #E9E9E9;
@@ -586,7 +854,7 @@ table a:hover {
 
 
 
-/*   ABSENCEPAGE   */
+/*  ----------------------------- ABSENCEPAGE  --------------------------------- */
 
 .absenceheader {
 	width: 340px;
@@ -776,7 +1044,7 @@ input:checked + .slider:before {
 
 
 
-/* THANK YOU! */
+/*     -----------------------     THANK YOU!  ---------------------------- */
 .thankyou-header {
 	width: 340px;
 	height: 50px;
@@ -805,7 +1073,7 @@ input:checked + .slider:before {
 
 
 
-/*  SEND MESSAGE  */
+/*    ---------------------------- SEND MESSAGE --------------------------  */
 
 .send-messagebox{
 	width: 280px;
@@ -848,7 +1116,7 @@ input:checked + .slider:before {
 
 
 
-/* NAVBAR */
+/*  ---------------------------------  NAVBAR  -------------------------------- */
 
 .navbar {
 	background-color: #88BBD6;
@@ -917,7 +1185,7 @@ input:checked + .slider:before {
 
 
 
-/* NAVBAR NAVIGATION */
+/*                    --------------------- NAVBAR NAVIGATION  ------------------- */
 .navbarlefton {
 	background-color: #99D3Df;
 	position: absolute; 
