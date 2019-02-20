@@ -838,6 +838,13 @@
 	font-size: 18px;
 }
 
+.child-messagebox {
+	position: absolute;
+	top: 500px;
+	left: 30px;
+	font-size: 14px;
+}
+
 
 
 /* ------------------------------------- SCHEDULE  -------------------------------- */
