@@ -63,6 +63,30 @@
 	border-radius: 50px;
 }
 
+.logoutbutton {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	left: 290px;
+	padding: 8px 5px 5px 6px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.logoutbutton a {
+	text-decoration: none;
+	color: black
+}
+
+.logoutbutton:hover {
+	background-color: #88BBD6;
+	border-radius: 50px;
+}
+
+
+
+
 
 
 
