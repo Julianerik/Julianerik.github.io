@@ -95,13 +95,17 @@
 /* --------------------------------------------  INDEX     ----------------------------------------------  */
 .generalinfobox {
 	position: absolute;
-	top: 150px;
+	top: 130px;
 	left: 12px;
 	width: 320px;
-	height: 150px;
+	height: 130px;
 	padding: 0px 0px 5px 30px;
 	margin: auto;
 	font-size: 14px;
+	border-style: solid;
+	border-color: #E9E9E9;
+	border-width: 1px 0px 1px 0px;
+	background-color: #66B9BF;
 }
 
 .specificinfobox {
@@ -109,10 +113,14 @@
 	top: 290px;
 	left: 12px;
 	width: 320px;
-	height: 150px;
+	height: 75px;
 	padding: 0px 0px 5px 30px;
 	margin: auto;
 	font-size: 14px;
+	border-style: solid;
+	border-color: #E9E9E9;
+	border-width: 1px 0px 1px 0px;
+	background-color: #EEAA7B;
 }
 
 .foodbox {
@@ -120,10 +128,14 @@
 	top: 390px;
 	left: 12px;
 	width: 320px;
-	height: 150px;
+	height: 70px;
 	padding: 0px 0px 5px 30px;
 	margin: auto;
 	font-size: 14px;
+	border-style: solid;
+	border-color: #E9E9E9;
+	border-width: 1px 0px 1px 0px;
+	background-color: #E9C893;
 }
 
 
@@ -300,6 +312,23 @@
 }
 
 
+.sas2-time-selectbox {
+	width: 70px;
+	height: 30px;
+	padding: 0px 0px 10px 5px;
+}
+
+.sas2-time-selectbox select {
+	font-family: helvetica;
+	font-size: 16px;
+	background-color: #E9E9E9;
+}
+
+
+
+
+
+
 
 .sas2-daysbox {
 	width: 200px;
@@ -394,7 +423,6 @@
 
 .sas2-pickup-messagebox {
 	width: 280px;
-	height: 250px;
 	position: absolute;
 	left: 45px;
 	top: 225px;
