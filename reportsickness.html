@@ -12,7 +12,7 @@
 	</head>
 	
 	<body>
-	<div class="backbutton"><a href="schedulesickness.html"> <b><</b> </a></div>
+	<div class="backbutton"><a href="mykids.html"> <b><</b> </a></div>
 	<div class="homebutton"><a href="testindex.html"> <img src="homeicon.png" height="35" width ="35"></a></div>
 	
 	<div class="bodybox">
@@ -23,14 +23,51 @@
 	
 	<div class="absence-buttonbox">
 	<label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" checked="ischecked">
       <span class="slider round"></span>
     </label>
 	</div>
 	
-	<div class="absence-timebox">
-	  <p>Tors. 13 Februari - 08:00 (TEST)</p></br>
-	  <p>Tors. 13 Februari - 16:00 (TEST)</p></br>
+	<div class="absence-timebox">	  	
+       <div class="absence-selectbox-left">
+	   <p>Från:</p>
+	      <select>
+	  	    <option value="0600">06:00</option>
+	        <option value="0630">06:30</option>
+	        <option value="0700">07:00</option>
+	        <option value="0730">07:30</option>
+		    <option value="0800" selected="selected">08:00</option>
+	        <option value="0830">08:30</option>
+	        <option value="0900">09:00</option>
+	        <option value="0930">09:30</option>
+			<option value="1000">10:00</option>
+			<option value="0930">10:30</option>
+			<option value="1000">11:00</option>
+			<option value="1000">11:30</option>
+	      </select>
+	   </div>
+
+	   <div class="absence-selectbox-left">
+	     <p>Till:</p>
+	      <select>
+	  	    <option value="1200">12:00</option>
+	        <option value="1230">12:30</option>
+	        <option value="1300">13:00</option>
+	        <option value="1330">13:30</option>
+		    <option value="1400">14:00</option>
+	        <option value="1430">14:30</option>
+	        <option value="1500">15:00</option>
+	        <option value="1530">15:30</option>
+			<option value="1600" selected="selected">16:00</option>
+		    <option value="1630">16:30</option>
+	        <option value="1700">17:00</option>
+	        <option value="1730">17:30</option>
+			<option value="1800">18:00</option>
+	      </select>
+	   </div>
+		
+		
+
 	</div>
 	
 	<div class="absence-messagebox">

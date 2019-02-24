@@ -1176,7 +1176,25 @@ input:checked + .slider:before {
 	border-style: solid;
 	border-color: #E9E9E9;
 	border-width: 0px 0px 1px 0px;
+	
 }
+
+.absence-selectbox-left {
+	height: 70px;
+	width: 120px;
+	float: left;
+	text-align: left;
+	padding: 0px 0px 10px 5px;
+}
+
+.absence-selectbox-left select {
+    font-family: helvetica;
+	font-size: 14px;
+	padding: 5px;
+	background-color: #E9E9E9;
+	
+}
+
 
 .absence-messagebox {
 	width: 280px;
