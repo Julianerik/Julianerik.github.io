@@ -1,0 +1,236 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+
+/* LÄGG TILL DENNA INNAN LIVE*/
+/* body {
+  background-color: blue;
+} */
+
+
+
+.mainbody {
+  background-color: white;
+  width: 360px;
+  height: 640px;
+  overflow: auto;
+  font-family: georgia;
+  color: color;
+  text-align: center;
+  margin: 0px;
+}
+
+.topmenu {
+	width: 360px;
+	height: 70px;
+}
+
+.topmenu-button {
+	background-color: #5BC8AC;
+	float: left;
+	width: 96px;
+	height: 46px;
+	margin: 10px;
+	text-align: center;
+	border-width: 2px;
+	border-color: #93DBC6;
+	border-style: solid;
+	border-radius: 10px;	
+	color: white;
+}
+
+
+.mapbox {
+	background-color: #93DBC6;
+	width: 340px;
+	height: 340px;
+	margin: 10px;
+}
+
+.resultbox {
+	background-color: #93DBC6;
+	width: 340px;
+	height: 170px;
+	margin: 10px;
+	position: relative;
+	box-shadow: 5px 5px 5px grey;
+	overflow: hidden;
+	color: black;
+}
+
+.resultbox-header {
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 340px;
+	background-color: white; 
+	text-align: center;
+}
+
+.resultbox-pricing {
+	position: absolute;
+	bottom: 50px;
+	height: 30px;
+	width: 340px;
+	background-color: black; 
+	opacity: 0.5;
+	color: white;
+	font-size: 10px;
+}
+
+
+.fillerbox {
+	width: 340px;
+	height: 30px;
+	margin: 10px;
+}
+
+.bottom-menu {
+	position: fixed; 
+	bottom: 0px;
+	width: 360px;
+	height: 80px;	
+}
+
+.bottom-menu-button {
+	background-color: #5BC8AC;
+	float: left;
+	width: 66px;
+	height: 56px;
+	margin: 10px;
+	border-radius: 50px;
+	padding-top: 8px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.bottom-menu-button-center {
+	background-color: #5BC8AC;
+	float: left;
+	width: 66px;
+	height: 56px;
+	margin: 10px 55px 10px 55px;
+	border-radius: 50px;
+	padding-top: 8px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+/*-----------------------------------PROFILE------------------------*/
+
+.userbox {
+	background-color: #93DBC6;
+	width: 360px;
+	height: 220px;
+	margin: 20px 0px 10px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.userbox-split {
+	width: 90px;
+	height: 220px;
+	float: left;
+}
+
+.userbox-icon {
+	width: 170px;
+	height: 170px;	
+	margin-top: 10px;
+	float: left;
+}
+
+.userbox-gear {
+	left: 300px;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin: 10px 10px 0px 0px; 
+}
+
+.achievementbox {
+	background-color: #93DBC6;
+	width: 360px;
+	height: 340px;
+	margin: 10px 0px 10px 0px;
+	position: relative;
+}
+
+
+/*---------------------------   RESULTS ----------------------*/
+
+.results-bottom-header {
+	width: 360px;
+	height: 60px;
+	position: absolute;
+	bottom: 0px;
+	background-color: #5BC8AC;
+	border-style: solid;
+	border-color: #5BC8AC;
+	border-width: 0px 0px 2px 0px;
+	color: white;
+}
+
+.results-bottom-fade {
+	position: absolute;
+	bottom: 60px;
+	height: 30px;
+	width: 360px;
+	background-color: black; 
+	opacity: 0.5;
+	color: white;
+	font-size: 10px;
+}
+
+.backbutton {
+	position: absolute; 
+	top: 5px;
+	background-color: #93DBC6;
+	left: 5px;
+	width: 46px;
+	height: 46px;
+	float: right;
+	border-radius: 50px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.results-body {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	padding-top: 10px; 
+}
+
+#transparent {
+	color: white;
+}
+
+
+
