@@ -30,6 +30,7 @@
   color: color;
   text-align: center;
   margin: 0px;
+  position: relative;
 }
 
 .topmenu {
@@ -178,6 +179,36 @@
 	position: relative;
 }
 
+.achievementbox-header {
+	width: 260px;
+	height: 50px;
+	margin: 0px 50px 0px 50px;
+	padding-top: 5px;
+	font-size: 14px;
+	color: white;
+}
+
+.achievementbox-levelbar {
+	width: 300px;
+	height: 70px;
+	margin: 0px 30px 10px 30px;
+	text-align: left;
+	font-size: 14px;
+	color: white;
+	line-height: 0px;
+}
+
+.achievementbox-medallion {
+	width: 60px;
+	height: 70px;
+	margin: 0px 0px 15px 20px;
+	float: left;
+}
+
+.achievementbox a {
+	text-decoration: none;
+}
+
 
 /*---------------------------   RESULTS ----------------------*/
 
@@ -230,6 +261,67 @@
 
 #transparent {
 	color: white;
+}
+
+
+
+
+/* För popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #93DBC6;
+  border-color: #E9E9E9;
+  width: 280px;
+  height: 450px;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  color: white;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px 5px 4px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50px;
+}
+
+.popup-centerpic {
+	width: 120px;
+	height: 140px;
+	position: absolute;
+	left: 80px;
+	top: 10px;
 }
 
 
