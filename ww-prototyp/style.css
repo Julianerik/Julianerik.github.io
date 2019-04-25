@@ -66,7 +66,7 @@
 	height: 170px;
 	margin: 10px;
 	position: relative;
-	box-shadow: 5px 5px 5px grey;
+	box-shadow: 5px 5px 5px silver;
 	overflow: hidden;
 	color: black;
 }
@@ -133,10 +133,12 @@
 
 .align-left {
 	text-align: left;
+	padding-left: 5px;
 }
 
 .align-right {
 	text-align: right;
+	padding-right: 5px;
 }
 
 /*-----------------------------------PROFILE------------------------*/
@@ -177,6 +179,7 @@
 	height: 340px;
 	margin: 10px 0px 10px 0px;
 	position: relative;
+	text-decoration: none;
 }
 
 .achievementbox-header {
@@ -207,6 +210,42 @@
 
 .achievementbox a {
 	text-decoration: none;
+}
+
+
+.user-settings-box {
+	background-color: #93DBC6;
+	width: 360px;
+	height: 640px;
+	margin: 10px 0px 10px 0px;
+	position: relative;
+	text-decoration: none;
+}
+
+.user-settings-textbox {
+	background-color: white;
+	width: 360px;
+	height: 50px;
+	border-color: #5BC8AC;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	color: black;
+}
+
+.user-settings-left {
+	width: 120px;
+	height: 50px;
+	float: left;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.user-settings-right {
+	width: 200px;
+	height: 50px;
+	float: right;
+	text-align: right;
+	padding-right: 15px;
 }
 
 
@@ -249,11 +288,27 @@
 	border-style: solid;
 }
 
+.results-header {
+	width: 285px;
+	height: 80px;
+	background-color: white;
+	position: relative;
+	top: 10px;
+	left: 30px;
+	padding-left: 15px;
+	padding-top: 1px;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 14px;
+}
+
+
+
 .results-body {
 	width: 300px;
-	height: 300px;
+	height: 200px;
 	background-color: white;
-	position: absolute;
+	position: relative;
 	top: 10px;
 	left: 30px;
 	padding-top: 10px; 
@@ -262,6 +317,69 @@
 #transparent {
 	color: white;
 }
+
+
+.addtocart-button {
+	background-color: #5BC8AC;
+	width: 170px;
+	height: 50px;
+	margin: 30px 0px 0px 60px;
+	border-radius: 30px;
+	padding: 0px 0px 0px 0px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px silver;
+}
+
+
+
+
+
+/*-------------------------- SHOPPING CART ----------------*/
+.shopping-contentbox {
+	float: left;
+	width: 320px;
+	height: 60px;
+	line-height: 0px;
+	margin: 0px 20px 10px 20px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px 0px 1px 0px;
+	box-shadow: 3px 3px 5px silver;
+	color: white;
+}
+
+.gotoregister-button {
+	background-color: #5BC8AC;
+	float: right;
+	width: 100px;
+	height: 46px;
+	margin: 10px;
+	border-radius: 30px;
+	padding: 0px 0px 0px 0px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px silver;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -324,5 +442,24 @@
 	top: 10px;
 }
 
+.popup-centerinfo {
+	width: 160px;
+	height: 140px;
+	position: absolute;
+	left: 60px;
+	top: 80px;
+}
 
+.popup-bottom {
+	width: 220px;
+	height: 60px;
+	position: absolute;
+	left: 30px;
+	top: 250px;
+	color: white;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px 0px 1px 0px;
+	font-size: 20px;
+}
 
