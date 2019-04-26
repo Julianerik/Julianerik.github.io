@@ -85,11 +85,35 @@
 	bottom: 50px;
 	height: 30px;
 	width: 340px;
-	background-color: black; 
-	opacity: 0.5;
+	background: rgba(0, 0, 0, 0.5);
 	color: white;
-	font-size: 10px;
+	font-size: 12px;
 }
+
+.resultbox-pricing-left-img {
+	float: left;
+	height: 30px;
+	width: 30px;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+
+.resultbox-pricing-left {
+	float: left;
+	height: 30px;
+	width: 120px;
+	text-align: left;
+}
+
+.resultbox-pricing-right {
+	float: right;
+	height: 30px;
+	width: 150px;
+	text-align: right;
+	padding-right: 5px;
+}
+
 
 
 .fillerbox {
@@ -266,13 +290,30 @@
 .results-bottom-fade {
 	position: absolute;
 	bottom: 60px;
-	height: 30px;
+	height: 50px;
 	width: 360px;
-	background-color: black; 
-	opacity: 0.5;
+	background: rgba(0, 0, 0, 0.5);
 	color: white;
-	font-size: 10px;
+	font-size: 16px;
 }
+
+.results-bottom-fade-left-img {
+	float: left;
+	height: 50px;
+	width: 45px;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.results-bottom-fade-left {
+	float: left;
+	height: 50px;
+	width: 120px;
+	text-align: left;
+}
+
+
 
 .backbutton {
 	position: absolute; 
