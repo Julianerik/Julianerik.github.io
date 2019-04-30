@@ -524,10 +524,12 @@
 }
 
 .popup-resturantbox {
+	background: rgba(0, 0, 0, 0.2);
 	width: 250px;
 	height: 340px;
 	margin-left: 15px;
 	margin-top: 10px;
+	position: relative;
 }
 
 .popup-resturantbox-header {
@@ -537,6 +539,7 @@
 	text-align: left;
 	font-size: 22px;
 	line-height: 0px;
+	padding-left: 10px;
 }
 
 .popup-resturantbox-img {
@@ -584,6 +587,145 @@
 	font-size: 14px;
 }
 
+.popup-resturantbox-delivery {
+	background: rgba(0, 0, 0, 0.2);
+	width: 250px;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#delivery {
+	font-size: 16px;
+}
+
+.popup-receiptbox {
+	background: white;
+	width: 250px;
+	height: 400px;
+	margin-left: 15px;
+	margin-top: 10px;
+	position: relative;
+	overflow: auto;
+}
+
+.popup-receiptbox-header {
+	width: 250px;
+	height: 25px;
+	float: left;
+	color: black;
+	line-height: 0px;
+}
+
+.popup-receiptbox-img {
+	width: 120px;
+	height: 100px;
+	float: left;
+	margin-left: 65px;
+}
+
+.popup-receiptbox-linebox {
+	width: 250px;
+	height: 100px;
+	float: left;
+	color: black;
+}
+
+.popup-receiptbox-linebox-item {
+	width: 80px;
+	height: 20px;
+	float: left;
+	font-size: 12px;
+	line-height: 0px;
+}
+
+.popup-receiptbox-linebox-sum {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px 0px 0px 0px;
+	font-size: 12px;
+	line-height: 0px;
+	width: 80px;
+	height: 20px;
+	float: right;
+	color: black;
+}
+
+
+
+/*     -------      REGISTER       -----------        */
+
+.registerbody {
+	background-color: #93DBC6;
+	width: 360px;
+	height: 530px;
+	margin: 40px 0px 10px 0px;
+	position: relative;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-top: 60px;
+}
+
+.registerbody-box {
+	background: rgba(255, 255, 255, 0.9);
+	width: 300px;
+	height: 460px;
+}
+
+.register-sumtopay {
+	float: left;
+	width: 200px;
+	height: 70px;
+	margin: 10px 20px 0px 50px; 
+	font-size: 26px;
+	border-color: silver;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	padding-top: 30px;
+}
+
+.register-checkbox {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 10px 5px 0px 20px; 
+}
+
+.register-checkbox input[type=checkbox] {
+	transform: scale(2.0);
+}
+
+.register-paymentoption {
+	float: left;
+	width: 200px;
+	height: 50px;
+	margin: 10px 10px 0px 5px; 
+}
+
+.register-paymentoption input {
+	width: 170px;
+	height: 20px;
+	color: grey;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.pay-button {
+	background-color: #5BC8AC;
+	float: left;
+	width: 150px;
+	height: 56px;
+	margin: 20px 10px 10px 70px;
+	border-radius: 30px;
+	padding: 0px 0px 0px 0px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px silver;
+	font-size: 18px;
+}
 
 
 

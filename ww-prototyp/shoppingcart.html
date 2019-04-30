@@ -22,23 +22,23 @@
 		
 		<a href="#popup1">
 		<div class="shopping-contentbox">
-		  <p class="align-left">Resturang 1<p>
-		  <p class="align-right">Kvantitet / Pris / Mängd<p>
+		  <p class="align-left">Resturangen<p>
+		  <p class="align-right">49,00 SEK<p>
 		</div></a>
 		
-		<a href="#popup1">
+		<a href="#popup2">
 		<div class="shopping-contentbox">
-		  <p class="align-left">Bageri 2<p>
-		  <p class="align-right">Kvantitet / Pris / Mängd<p>
+		  <p class="align-left">Bageri't<p>
+		  <p class="align-right">50,00 SEK<p>
 		</div></a>
 		
-		<a href="#popup1">
+		<a href="#popup3">
 		<div class="shopping-contentbox">
-		  <p class="align-left">Livsmedel 3<p>
-		  <p class="align-right">Kvantitet / Pris / Mängd<p>
+		  <p class="align-left">Grossisten<p>
+		  <p class="align-right">85,00 SEK<p>
 		</div></a>
 		
-		<a href="#"><div class="gotoregister-button">
+		<a href="register.html"><div class="gotoregister-button">
 		  <p>BETALA</p>
 		</div></a>
 	  
@@ -49,17 +49,17 @@
 		  <p>----------- KVITTON -----------</p>
 		</div>
 		
-		<a href="#popup2">
+		<a href="#popup4">
 		<div class="active-receipt-contentbox">
 		  <p class="align-left">Kvitto 1<p>
 		</div></a>
 		
-		<a href="#popup2">
+		<a href="#popup5">
 		<div class="old-receipt-contentbox">
 		  <p class="align-left">Kvitto 2<p>
 		</div></a>
 		
-		<a href="#popup2">
+		<a href="#popup5">
 		<div class="old-receipt-contentbox">
 		  <p class="align-left">Kvitto 3<p>
 		</div></a>
@@ -73,14 +73,14 @@
 	  
 	  
 	  
-	  
+	  <!--                POPUP FÖR BETALNINGAR                          -->
 	   <div id="popup1" class="overlay">
 	    <div class="popup">
 		  <a class="close" href="#">&times;</a>
 		  <div class="content">
 		    <div class="popup-resturantbox">
 			  <div class="popup-resturantbox-header">
-			    <p>Resturangnamn</p>
+			    <p>Resturangen</p>
 			  </div>
 			  <div class="popup-resturantbox-img">
 			    <img src="gps-white.png" width="50" height="50">
@@ -101,40 +101,490 @@
 			  </div>
 			  
 			  <div class="popup-resturantbox-price">
-			    <p>59,00</p>
+			    <p>49,00</p>
 			  </div>
 			  
 			  <div class="popup-resturantbox-number">
 			    <p><img src="minus-white.png" width="14" height="14"> 1 <img src="plus-white.png" width="14" height="14"></p>
 			  </div>
 			
+			
+			
+			
+			  <div class="popup-resturantbox-delivery">
+			    <div class="popup-resturantbox-product">
+			      <p id="delivery">Utkörning</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-price">
+			      <p id="delivery">50,00</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-number">
+			      <p><input type="checkbox"></p>
+			    </div>
+			  
+			  </div>
 			</div>
 		    
 			
 			<div class="popup-bottom">
-			  <p class="align-right">SUMMA : <b>59,00 SEK<b><p>
+			  <p class="align-right">SUMMA : <b>49,00 SEK<b><p>
 			</div>
 		  </div>
 	     </div>
        </div>
 	   
+	   
 	   <div id="popup2" class="overlay">
 	    <div class="popup">
 		  <a class="close" href="#">&times;</a>
 		  <div class="content">
+		    <div class="popup-resturantbox">
+			  <div class="popup-resturantbox-header">
+			    <p>Bageri't</p>
+			  </div>
+			  <div class="popup-resturantbox-img">
+			    <img src="gps-white.png" width="50" height="50">
+			  </div>
+			  <div class="popup-resturantbox-info">
+			    <p>Exempelgatan 2</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-img">
+			    <img src="clock-white.png" width="50" height="50">
+			  </div>
+			  <div class="popup-resturantbox-info">
+			    <p>12:00</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-product">
+			    <p>Semla</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-price">
+			    <p>25,00</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-number">
+			    <p><img src="minus-white.png" width="14" height="14"> 2 <img src="plus-white.png" width="14" height="14"></p>
+			  </div>
+			
+			
+			
+			
+			  <div class="popup-resturantbox-delivery">
+			    <div class="popup-resturantbox-product">
+			      <p id="delivery">Utkörning</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-price">
+			      <p id="delivery">50,00</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-number">
+			      <p><input type="checkbox"></p>
+			    </div>
+			  
+			  </div>
+			</div>
 		    
 			
+			<div class="popup-bottom">
+			  <p class="align-right">SUMMA : <b>50,00 SEK<b><p>
+			</div>
+		  </div>
+	     </div>
+       </div>
+	   
+	   <div id="popup3" class="overlay">
+	    <div class="popup">
+		  <a class="close" href="#">&times;</a>
+		  <div class="content">
+		    <div class="popup-resturantbox">
+			  <div class="popup-resturantbox-header">
+			    <p>Grossisten</p>
+			  </div>
+			  <div class="popup-resturantbox-img">
+			    <img src="gps-white.png" width="50" height="50">
+			  </div>
+			  <div class="popup-resturantbox-info">
+			    <p>Exempelgatan 3</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-img">
+			    <img src="clock-white.png" width="50" height="50">
+			  </div>
+			  <div class="popup-resturantbox-info">
+			    <p>19:00</p>
+			  </div>
+			  
+			  
+			<!--         RAD 1            -->
+			  <div class="popup-resturantbox-product">
+			    <p>Mjölk</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-price">
+			    <p>5,00</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-number">
+			    <p><img src="minus-white.png" width="14" height="14"> 3 <img src="plus-white.png" width="14" height="14"></p>
+			  </div>
+			
+			<!--         RAD 2            -->
+			  <div class="popup-resturantbox-product">
+			    <p>Havregryn</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-price">
+			    <p>5,00</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-number">
+			    <p><img src="minus-white.png" width="14" height="14"> 1 <img src="plus-white.png" width="14" height="14"></p>
+			  </div>
+			
+			<!--         RAD 3            -->
+			  <div class="popup-resturantbox-product">
+			    <p>Stekfläsk</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-price">
+			    <p>15,00</p>
+			  </div>
+			  
+			  <div class="popup-resturantbox-number">
+			    <p><img src="minus-white.png" width="14" height="14"> 1 <img src="plus-white.png" width="14" height="14"></p>
+			  </div>
+			
+			
+			  <div class="popup-resturantbox-delivery">
+			    <div class="popup-resturantbox-product">
+			      <p id="delivery">Utkörning</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-price">
+			      <p id="delivery">50,00</p>
+			    </div>
+			  
+			    <div class="popup-resturantbox-number">
+			      <p><input type="checkbox" checked="checked"></p>
+			    </div>
+			  
+			  </div>
+			</div>
+		    
 			
 			<div class="popup-bottom">
-			  <p class="align-right">SUMMA : <b>100 SEK<b><p>
+			  <p class="align-right">SUMMA : <b>85,00 SEK<b><p>
 			</div>
+		  </div>
+	     </div>
+       </div>
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   <!--                     POPUP FÖR KVITTON                                   -->
+	   
+	   <div id="popup4" class="overlay">
+	    <div class="popup">
+		  <a class="close" href="#">&times;</a>
+		  <div class="content">
+		    <div class="popup-receiptbox">
+			
+			  <div class="popup-receiptbox-img">
+			    <img src="qr-black.png" height="100" width="100">
+			  </div>
+			  
+			  <div class="popup-receiptbox-header">
+			    <p>-- Resturangen --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Lunchrätt</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">49,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p>49,00</p>
+				</div>
+				
+			  </div>
+			
+			  <div class="popup-receiptbox-img">
+			    <img src="qr-black.png" height="100" width="100">
+			  </div>
+			  
+			  <div class="popup-receiptbox-header">
+			    <p>-- Bageri't --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Semla</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>2</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-img">
+			    <img src="qr-black.png" height="100" width="100">
+			  </div>
+			  
+			  <div class="popup-receiptbox-header">
+			    <p>-- Grossisten --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Mjölk</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>3</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">15,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Havregryn</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">5,00</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Stekfläsk</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">15,00</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Utkörning</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p>85,00</p>
+				</div>
+				
+			  </div>
+				
+			 </div>
+			</div>
+		  
 		  </div>
 	     </div>
        </div>
 	  
 	  
-	  
-	  
+	  <div id="popup5" class="overlay">
+	    <div class="popup">
+		  <a class="close" href="#">&times;</a>
+		  <div class="content">
+		    <div class="popup-receiptbox">
+			  
+			  <div class="popup-receiptbox-header">
+			    <p>-- Resturangen --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Lunchrätt</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">49,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p>49,00</p>
+				</div>
+				
+			  </div>
+			  
+			  <div class="popup-receiptbox-header">
+			    <p>-- Bageri't --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Semla</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>2</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+			  <div class="popup-receiptbox-header">
+			    <p>-- Grossisten --</p>
+			  </div>
+			  
+			  <div class="popup-receiptbox-linebox">
+			    <div class="popup-receiptbox-linebox-item">
+				  <p>Mjölk</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>3</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">15,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Havregryn</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">5,00</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Stekfläsk</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>1</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">15,00</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p>Utkörning</p>
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				</div>
+				<div class="popup-receiptbox-linebox-item">
+				  <p class="align-right">50,00</p>
+				</div>
+				
+				<div class="popup-receiptbox-linebox-sum">
+				  <p>85,00</p>
+				</div>
+				
+			  </div>
+			  </div>
+				
+			 </div>
+		  </div>
+	     </div>
+       </div>
 	  
 	  
 	  
