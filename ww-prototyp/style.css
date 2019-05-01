@@ -448,9 +448,10 @@
 
 .addtocart-button {
 	background-color: #5BC8AC;
+	float: left;
 	width: 170px;
 	height: 50px;
-	margin: 30px 0px 0px 60px;
+	margin: 10px 0px 0px 60px;
 	border-radius: 30px;
 	padding: 0px 0px 0px 0px;
 	border-color: white;
@@ -461,9 +462,30 @@
 	box-shadow: 3px 3px 5px silver;
 }
 
+.results-productline {
+	width: 300px;
+	height: 40px;
+	float: left;
+	font-size: 14px;
+	text-align: left;
+}
 
+.results-long-div {
+	float: left;
+	width: 90px;
+	height: 40px;
+	padding-left: 5px;
+}
 
+.results-short-div {
+	float: left;
+	width: 50px;
+	height: 40px;
+}
 
+.redtext {
+	color: red;
+}
 
 /*-------------------------- SHOPPING CART ----------------*/
 .shopping-contentbox {
