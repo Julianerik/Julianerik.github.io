@@ -729,6 +729,152 @@
 
 
 
+/*------------------- INTROPAGE -----------------------*/
+.intro-body {
+	background-color: #93DBC6;
+	width: 360px;
+	height: 600px;
+	margin: 20px 0px 10px 0px;
+	position: relative;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.intropage-box {
+	float: left;
+	width: 300px;
+	height: 500px;
+	margin: 40px 0px 0px 30px;
+}
+
+.intropage-slider-box {
+	background: rgba(255, 255, 255, 0.7);
+	width: 300px;
+	height: 450px;
+	display: flex;
+	overflow-x: auto;
+	
+	-webkit-overflow-scrolling: touch; 
+	-webkit-scroll-snap-points-x: repeat(300px);
+      -ms-scroll-snap-points-x: repeat(300px);
+          scroll-snap-points-x: repeat(300px);
+    -webkit-scroll-snap-type: mandatory;
+       -ms-scroll-snap-type: mandatory;
+          scroll-snap-type: mandatory;
+		  scroll-behavior: smooth;
+}
+
+.intro-slides {
+	width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.intro-img {
+	width: 100px;
+	height: 100px;
+	margin: 20px 0px 0px 100px
+}
+
+.intro-text {
+	width: 240px;
+	height: 280px;
+	margin: 10px 0px 0px 30px;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.intro-slide-button {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 5px 10px 0px 0px;
+	border-radius: 50px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+}
+
+.intro-fillerbox {
+	float: left;
+	width: 60px;
+	height: 50px;
+}
+
+.intro-small-fillerbox {
+	float: left;
+	width: 25px;
+	height: 50px;
+}
+
+.intro-continue-button {
+	background-color: #5BC8AC;
+	float: left;
+	width: 150px;
+	height: 36px;
+	margin: 15px 10px 10px 40px;
+	border-radius: 30px;
+	padding: 0px 0px 10px 0px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px silver;
+	font-size: 14px;
+}
+
+.new-user-inputbox {
+	float: left;
+	width: 200px;
+	height: 50px;
+	margin: 0px 0px 0px 20px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.new-user-inputbox input {
+	width: 200px;
+	height: 40px;
+	padding: 5px;
+	color: grey;
+}
+
+
+/*--------------------- LOGIN ----------------*/
+.login-box {
+	background: rgba(255, 255, 255, 0.7);
+	width: 280px;
+	height: 350px;
+	margin: 40px 0px 0px 30px;
+	padding: 150px 0px 0px 20px;
+}
+
+.loginbutton {
+	background-color: #5BC8AC;
+	float: left;
+	width: 200px;
+	height: 36px;
+	margin: 20px 10px 0px 20px;
+	border-radius: 30px;
+	padding: 0px 0px 10px 0px;
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px silver;
+	font-size: 14px;
+}
+
+#smallerfont {
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+
 
 
 
