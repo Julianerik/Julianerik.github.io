@@ -36,9 +36,22 @@ body {
 	display: flex;
 	width: 100vw;
 	height: 60px;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.1);
 	justify-content: space-between;
 }
+
+.dropdown-background {
+  background-color: black;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .dropdown-background {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+}
+
+
 
 .navbar ul {
 		display: flex;
