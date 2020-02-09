@@ -123,12 +123,12 @@ section p {
 }
 
 .city-bg {
-	top: -5%;
+	top: 0;
 	filter: blur(2px);
 }
 
 .city-fg {
-	top: -5%;
+	top: 0;
   filter: blur(1px);
 }
 
