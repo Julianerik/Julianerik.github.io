@@ -37,6 +37,8 @@
 					</div>
 				</nav>
 
+
+				<!-- HOME -->
 				<section id="home" class="sec-home">
 
 					<div class="row justify-content-center">
@@ -50,6 +52,7 @@
 
 				</section>
 
+				<!-- SKILLSET -->
 				<section id="about" class="sec-about lax" data-lax-opacity="0 0, 200 1">
 					<h1 class="text-uppercase p-5">Skillset</h1>
 
@@ -78,37 +81,69 @@
 
 				</section>
 
+				<!-- PROJECTS -->
 				<section id="projects" class="sec-projects">
 						<h1 class="text-uppercase p-5">Pågående projekt</h1>
 
 						<div class="row justify-content-center">
 							<div class="col-md-6 col-sm-12 p-5">
-
+								<!-- CARD 1 -->
 								<div class="card dark-bg shadow" style="width: 20rem; height: 30rem;">
 									<div class="card-body p-5">
 										<h4 class="card-title p-2">Helpful Fairy</h5>
 										<p class="card-text p-2 text-justify mb-5">En habit tracker som hjälper användarna att hålla reda på nya vanor,
 											 med hjälp av återkommande påminnelser utifrån användarens behov.</p>
-											 <a href="#" class="btn btn-primary m-2" style="width: 90%;">Läs mer</a>
+											 <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modal1" style="width: 90%;">
+	   										Läs mer
+	 										</button>
 									</div>
 								</div>
-
 						 	</div>
-							<div class="col-md-6 col-sm-12 p-5">
 
+							<!-- CARD 2 -->
+							<div class="col-md-6 col-sm-12 p-5">
 								<div class="card dark-bg shadow" style="width: 20rem; height: 30rem;">
 									<div class="card-body p-5">
 										<h4 class="card-title p-2">Klimatkollen</h5>
 										<p class="card-text p-2 text-justify">Ett pågående skolprojekt där vi bygger ett system där användare kan inrapportera
 										observationer av diverse djur och klimatfenomen.</p>
-										<a href="#" class="btn btn-primary m-2" style="width: 90%;">Läs mer</a>
+										<!--<a href="#" class="btn btn-primary m-2" style="width: 90%;">Läs mer</a> -->
+
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="width: 90%;">
+  										Launch demo modal
+										</button>
 									</div>
 								</div>
-
 							</div>
 						</div>
+
+						<!-- MODAL 1-->
+						<div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content modal-bg">
+						      <div class="modal-header">
+						        <h5 class="modal-title">Modal title</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <p>Modal body text goes here.</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<!-- MODAL 2-->
+
+
+
 				</section>
 
+				<!-- EDUCATION -->
 				<section id="education" class="sec-about">
 
 					<div class="row p-2">
@@ -153,6 +188,7 @@
 
 				</section>
 
+				<!-- HISTORY -->
 				<section id="history" class="sec-projects">
 
 						<h1 class="text-uppercase p-5">Work History</h1>
@@ -215,6 +251,7 @@
 
 				</section>
 
+				<!-- CONTACT -->
 				<section id="contact" class="sec-about">
 					<h1 class="p-5">Contact</h1>
 				</section>

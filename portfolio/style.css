@@ -189,3 +189,8 @@ section p {
         float: none;
         margin-bottom: 10px;
 }
+
+
+.modal-bg {
+  background-color: #333;
+}
