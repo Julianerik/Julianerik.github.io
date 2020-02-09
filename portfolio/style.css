@@ -123,22 +123,22 @@ section p {
 }
 
 .city-bg {
-	top: -15%;
+	top: -5%;
 	filter: blur(2px);
 }
 
 .city-fg {
-	top: -15%;
+	top: -5%;
   filter: blur(1px);
 }
 
 
 @media only screen and (min-width: 600px) {
 	.city-bg {
-		top: -50%
+		top: -75%
 	}
 	.city-fg {
-		top: -50%
+		top: -75%
 	}
 }
 
