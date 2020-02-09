@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initital-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
@@ -28,7 +29,7 @@
 					<div class="collapse navbar-collapse dropdown-background" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item" ><a class="nav-link" href="#home">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">Skillset</a></li>
 							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 							<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
 							<li class="nav-item"><a class="nav-link" href="#history">Work History</a></li>
@@ -43,7 +44,7 @@
 
 					<div class="row justify-content-center">
 						<div class="col">
-							<h1 class="lax text-uppercase" data-lax-translate-y="0 0, 400 -300" data-lax-opacity="0 1, 100 0">Julian Eriksson</h1>
+							<h1 class="lax text-uppercase special-text" data-lax-translate-y="0 0, 400 -300" data-lax-opacity="0 1, 100 0">Julian Eriksson</h1>
 							<h3 class="lax text-uppercase" data-lax-translate-y="0 0, 400 -300" data-lax-opacity="0 1, 100 0">Portfolio</h1>
 						</div>
 					</div>
@@ -54,26 +55,44 @@
 
 				<!-- SKILLSET -->
 				<section id="about" class="sec-about lax" data-lax-opacity="0 0, 200 1">
-					<h1 class="text-uppercase p-5">Skillset</h1>
+					<h1 class="text-uppercase p-5 special-text">Skillset</h1>
 
 					<div class="row">
 						<div class="col p-5">
+
+							<i class="devicon-csharp-plain p-4" style="font-size: 15vh;"></i>
+							<i class="devicon-javascript-plain p-4" style="font-size: 15vh;"></i>
+
+
+
+
+							<!--
 							<h3>Languages</h3>
 							<p>C#</p>
 							<p>HTML/CSS</p>
-							<p>JavaScript</p>
+							<p>JavaScript</p> -->
 					  </div>
 
 						<div class="col p-5">
+							<i class="devicon-html5-plain-wordmark p-4" style="font-size: 15vh;"></i>
+							<i class="devicon-css3-plain-wordmark p-4" style="font-size: 15vh;"></i>
+
+							<!--
 							<h3>Methodologies</h3>
 							<p>MVC</p>
-							<p>ASP.NET</p>
+							<p>ASP.NET</p>-->
 						</div>
 
 						<div class="col p-5">
+							<i class="devicon-bootstrap-plain-wordmark p-4" style="font-size: 15vh;"></i>
+							<i class="devicon-dot-net-plain-wordmark p-4" style="font-size: 15vh;"></i>
+
+
+
+							<!--
 							<h3>IDE</h3>
 							<p>Microsoft Visual Studio</p>
-							<p>Atom</p>
+							<p>Atom</p>-->
 						</div>
 					</div>
 
@@ -83,7 +102,7 @@
 
 				<!-- PROJECTS -->
 				<section id="projects" class="sec-projects">
-						<h1 class="text-uppercase p-5">Pågående projekt</h1>
+						<h1 class="text-uppercase p-5 special-text">Pågående projekt</h1>
 
 						<div class="row justify-content-center">
 							<div class="col-md-6 col-sm-12 p-5">
@@ -109,8 +128,8 @@
 										observationer av diverse djur och klimatfenomen.</p>
 										<!--<a href="#" class="btn btn-primary m-2" style="width: 90%;">Läs mer</a> -->
 
-										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="width: 90%;">
-  										Launch demo modal
+										<button type="button" class="btn btn-primary text-uppercase mt-5" data-toggle="modal" data-target="#modal2" style="width: 90%;">
+  										Läs mer
 										</button>
 									</div>
 								</div>
@@ -122,13 +141,13 @@
 						  <div class="modal-dialog modal-dialog-centered" role="document">
 						    <div class="modal-content modal-bg">
 						      <div class="modal-header">
-						        <h5 class="modal-title">Modal title</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
+						        <h5 class="modal-title">Helpful Fairy</h5>
 						      </div>
-						      <div class="modal-body">
-						        <p>Modal body text goes here.</p>
+						      <div class="modal-body p-5">
+						        <p class="text-justify smallerfont">En HabitTracker som hjälper användaren att upprätthålla nya vanor med hjälp av
+										återkommande påminnelser och uppföljning.</p>
+										<p class="text-justify smallerfont">I nuläget är detta en fungerande WPF-app skriven i C#, och jag jobbar i nuläget med att
+										anpassa den till Android.</p>
 						      </div>
 						      <div class="modal-footer">
 						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -138,6 +157,24 @@
 						</div>
 
 						<!-- MODAL 2-->
+						<div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content modal-bg">
+						      <div class="modal-header">
+						        <h5 class="modal-title">Klimatkollen</h5>
+						      </div>
+						      <div class="modal-body p-5">
+						        <p class="smallerfont text-justify">Ett pågående skolprojekt, där vi i en projektgrupp bestående av fem medlemmar bygger en applikation där
+										användare kan registrera observationer av djur samt klimatfenomen.</p>
+										<p class="smallerfont text-justify">Det långsiktiga målet med denna applikation är att den insamlade datan ska kunna ligga till grund för
+										klimatforskning.</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 
 
 
@@ -147,7 +184,7 @@
 				<section id="education" class="sec-about">
 
 					<div class="row p-2">
-						<h1 class="text-uppercase p-5">Education</h1>
+						<h1 class="text-uppercase p-5 special-text">Education</h1>
 					</div>
 
 					<div class="row p-2 justify-content-center">
@@ -191,7 +228,7 @@
 				<!-- HISTORY -->
 				<section id="history" class="sec-projects">
 
-						<h1 class="text-uppercase p-5">Work History</h1>
+						<h1 class="text-uppercase p-5 special-text">Work History</h1>
 
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
@@ -253,7 +290,8 @@
 
 				<!-- CONTACT -->
 				<section id="contact" class="sec-about">
-					<h1 class="p-5">Contact</h1>
+					<h1 class="p-3 special-text">Contact</h1>
+					<p>julianeriksson@gmail.com</p>
 				</section>
 
 
