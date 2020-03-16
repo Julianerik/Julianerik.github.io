@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Condensed&display=swap');
+
+body {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  background-color: black;
+}
+
+html
+{
+    width: 100%;
+}
+
+*, *:before, *:before {
+	box-sizing: border-box;
+}
+
+.fullpage {
+  height: 100vh;
+}
+
+#vertical-center {
+  padding-top: 40vh;
+}
+
+#nav {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 100vh;
+  width: 25vh;
+}
+
+#nav a {
+  color: white;
+}
+
+.container-fluid {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid::-webkit-scrollbar {
+  display: none;
+}
+
+.forestbg {
+  position: absolute;
+  top: -30%;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  opacity: 0.4
+}
+
+.p-border {
+  padding-left: 30vh;
+  padding-right: 30vh;
+}
