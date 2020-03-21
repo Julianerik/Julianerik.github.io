@@ -57,7 +57,7 @@ html
   z-index: -1;
   width: 100%;
   height: auto;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: blur(1px);
 }
 
@@ -70,4 +70,8 @@ html
   padding-top: 5vh;
   padding-left: 28vw;
   padding-right: 28vw;
+}
+
+.modal-bg {
+  background-color: #251D27;
 }
