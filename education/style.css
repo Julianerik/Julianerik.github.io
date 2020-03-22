@@ -5,6 +5,7 @@ body {
   font-family: 'Playfair Display', serif;
   overflow: hidden;
   background-color: black;
+  transition: background-color 0.5s ease;
 }
 
 *, *:before, *:before {
@@ -17,7 +18,7 @@ html
 }
 
 .fullpage {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #vertical-center {
@@ -25,12 +26,12 @@ html
 }
 
 
-
 #nav {
-  position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.0);
-  height: 40vh;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -59,27 +60,64 @@ html
   z-index: -1;
   width: 100%;
   height: auto;
-  opacity: 0.3;
+  opacity: 0.5;
   filter: blur(1px);
 }
 
 .p-border {
-  padding-left: 28vw;
-  padding-right: 28vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .p-border-top {
   padding-top: 5vh;
-  padding-left: 28vw;
-  padding-right: 28vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .modal-bg {
   background-color: #251D27;
 }
 
+#btnMenu {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  z-index: 5;
+  padding-top: 15px;
+}
+
+#btnCloseMenu {
+  display: none;
+  position: fixed;
+  font-size: 30px;
+  bottom: 15px;
+  right: 15px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  z-index: 5;
+  padding-top: 5px;
+}
+
+
+
+
+/*denna mediaqueryn sätter hur sidan ska bete sig i desktop*/
 @media only screen and (min-width: 600px) {
   #nav {
+    display: block;
     position: fixed;
     left: 0;
     z-index: 1;
@@ -87,4 +125,61 @@ html
     height: 100vh;
     width: 30vw;
   }
+
+  .p-border {
+    padding-left: 28vw;
+    padding-right: 28vw;
+  }
+
+  .p-border-top {
+    padding-top: 5vh;
+    padding-left: 28vw;
+    padding-right: 28vw;
+  }
+
+  #btnMenu {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    z-index: 5;
+    padding-top: 15px;
+  }
+
+  #btnCloseMenu {
+    display: none;
+    position: fixed;
+    font-size: 30px;
+    bottom: 15px;
+    right: 15px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    z-index: 5;
+    padding-top: 5px;
+  }
+
 }
+
+
+
+
+.article {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ändra färg på bakgrundspaneler */

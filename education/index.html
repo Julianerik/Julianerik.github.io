@@ -11,7 +11,11 @@
 
 		<link href="style.css" rel="stylesheet" type="text/css">
 
-		<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+		<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+
+
+
 
 		<title>Hållbarhet - Utbildningsmaterial</title>
 	</head>
@@ -23,11 +27,11 @@
 
     <div class="container-fluid" id="scrollableId">
 
-      <div id="nav" class="p-3">
+      <div id="nav" class="p-3" onclick="CloseMenuScreen()">
         <ul class="pt-5">
           <li><a href="#hållbarhet">Hållbarhet</a></li>
           <ul>
-            <li><a href="#hållbarhet1">Begreppet</a></li>
+            <li><a href="#hållbarhet1">Begreppet hållbarhet</a></li>
           </ul>
           <li><a href="#kravställning">Hållbar kravställning</a></li>
           <ul>
@@ -53,33 +57,53 @@
       </div>
 
 
-
       <section class="fullpage" id="hållbarhet">
         <h1 class="text-center lax" id="vertical-center" data-lax-translate-y="0 0, 400 -300" data-lax-opacity="100 0, 0 1">Hållbarhet</h1>
       </section>
 
-      <section class="fullpage article-bg" id="hållbarhet1">
+      <section class="fullpage article" id="hållbarhet1">
         <h1 class="text-center p-5">Hållbarhet</h1>
-				        <p class="text-center">Hållbarhet – redogörelse för begreppet i kontextet av systemutveckling. (social, ekologisk, ekonomisk)</p>
+								<p class="text-justify p-border"><i>“En hållbar utveckling är en utveckling som tillfredsställer dagens behov utan att äventyra kommande generationers möjligheter att tillfredsställa sina behov” </i>(FN, 1987).</p>
+
+								<p class="text-center p-border"><b>Ekonomisk hållbarhet</b></p>
+								<p class="text-center p-border">Hur vi kan maximera våra resurser, men undvika effekter som påverkar den ekologiska eller sociala hållbarheten.</p>
+
+								<p class="text-center p-border"><b>Social hållbarhet</b></p>
+								<p class="text-center p-border">God kognitiv arbetsmiljö främjar effektivitet, kvalitet, säkerhet, samt stöder kreativitet och kompetensutveckling.</p>
+
+								<p class="text-center p-border"><b>Ekologisk hållbarhet</b></p>
+								<p class="text-center p-border">Ekologisk hållbarhet handlar om dem direkta effekter som vår jord utsätts för i och med utvecklandet av systemet. Vårt uttag från dem resurser som vi använder oss av måste vara maximerade. </p>
+
+
       </section>
 
       <section class="fullpage" id="kravställning">
         <h1 class="text-center lax" id="vertical-center" data-lax-opacity="300 0, 0 1" data-lax-anchor="self">Varför är det viktigt att kravställa hållbart?</h1>
       </section>
 
-      <section class="fullpage" id="kravställning1">
-        <h1 class="text-center p-5">Varför är det viktigt att kravställa hållbart?</h1>
-        <p class="text-center">viktigaste delen i systemutveckling?</p>
+      <section class="fullpage article" id="kravställning1">
+        <p class="text-center p-border-top">Krav är en stor felkälla vid utveckling av it-system. En bristande kravhantering leder
+					till att de system som utvecklas får en sämre kvalitet. Det kostar även pengar att åtgärda, speciellt ju senare i
+					processen dessa fel upptäcks. Om fel i kravhanteringen upptäcks sent så kan det innebära att
+					felen kommer finnas på flera olika ställen som exempelvis design, programkod, testfall och felrapporter.
+					 Alltså är det viktigt att det blir rätt från början (Eriksson, 2008).</p>
+
+				<p class="text-center p-border">Med tanke på hur otroligt många system som används dagligen världen över, både privat och i arbetet,
+					 så är det viktigt att dessa system utvecklas på ett hållbart sätt (Huang, 2009). </p>
+
+				<p class="text-center p-border">Brister i kravhanteringen leder även till brister i systemets kvalitet. Detta kan innebära allt från att utvecklingen tar längre tid, kostar mer pengar och missnöjda användare (Eriksson, 2008). Hållbarhet kan inte vara något man kommer på i slutet av ett projekt. För att utveckla hållbara system måste hållbarhetsaspekten finnas med från projektets början och löpa som en röd tråd genom hela utvecklingsprocessen (Huang, 2009). Om man inte har med hållbarhet under kravarbetet samt prioriterar dessa krav så kommer systemet inte att bli hållbart. </p>
+
+				<p class="text-center p-border">Förutom att ta fram krav gällande miljöaspekter så ska dessa även prioriteras lika högt som organisatoriska krav och användarnas behov  (Huang, 2009).</p>
       </section>
 
       <section class="fullpage" id="råd">
         <h1 class="text-center lax" id="vertical-center" data-lax-opacity="300 0, 0 1" data-lax-anchor="self">Hur kravställer man hållbart</h1>
       </section>
 
-      <section class="fullpage" id="råd1">
+      <section class="fullpage article" id="råd1">
         <h1 class="text-center p-5">Hur kravställer man hållbart?</h1>
 
-        <h3 class="text-center p-border">Ha med miljömål i kravställningen, och prioritera dem efter bästa möjliga mån (Huang)</h3>
+        <h3 class="text-center p-border">Inkludera miljömål i kravställningen</h3>
 
         <p class="text-center p-border">I en rapport från statens offentliga utredningar framgår det att med hjälp av digitaliseringen är det möjligt att minska koldioxidutsläppen med 20% de närmsta 20 åren. </p>
 				<p class="text-center p-border">Systemeffekter - “Digitaliseringens systemeffekter kommer från förändrade beteenden och andra icke-teknologiska faktorer, vilka kan vara både avsiktliga och oavsiktliga. En bred acceptans hos användarna är en viktig del i att mer miljövänliga it-applikationer i slutändan ska ge positiva miljöeffekter.”  </p>
@@ -89,11 +113,11 @@
 				<p class="text-center p-border">Direkta effekter -  “t.ex. kan energieffektiva komponenter reducera energiåtgång under produktens användning”</p>
       </section>
 
-			<section class="fullpage" id="råd1-1">
+			<section class="fullpage article" id="råd1-1">
 
-						<h3 class="text-center p-border-top">Ha med miljömål i kravställningen, och prioritera dem efter bästa möjliga mån (Huang)</h3>
+						<h3 class="text-center p-border-top">Inkludera miljömål i kravställningen</h3>
 
-						<p class="text-center p-border-top">Miljökrav</p>
+						<p class="text-center p-border-top"><b>Miljökrav</b></p>
 
 						<ul class="p-border">
 							<li>Systemet bör minimera användningen av energi.</li>
@@ -107,11 +131,11 @@
 
 			</section>
 
-			<section class="fullpage" id="råd1-2">
+			<section class="fullpage article" id="råd1-2">
 
-						<h3 class="text-center p-border-top">Ha med miljömål i kravställningen, och prioritera dem efter bästa möjliga mån (Huang)</h3>
+						<h3 class="text-center p-border-top">Inkludera miljömål i kravställningen</h3>
 
-						<p class="text-center p-border-top">Checklista</p>
+						<p class="text-center p-border-top"><b>Checklista för hållbar design</b></p>
 
 						<ul class="p-border">
 							<li>Kommer systemets design att skapa material som måste kastas?</li>
@@ -126,7 +150,7 @@
 
 
 
-      <section class="fullpage" id="råd2">
+      <section class="fullpage article" id="råd2">
         <h1 class="text-center p-5">Hur kravställer man hållbart?</h1>
 
         <h3 class="text-center p-border">Engagera användare tidigt och ofta i utvecklingsprocessen.</h3>
@@ -147,7 +171,7 @@
 
       </section>
 
-      <section class="fullpage" id="råd3">
+      <section class="fullpage article" id="råd3">
         <h1 class="text-center p-5">Hur kravställer man hållbart?</h1>
 
         <h3 class="text-center p-border">Innovationsupphandling</h3>
@@ -173,15 +197,29 @@
         <h1 class="text-center lax" id="vertical-center" data-lax-opacity="300 0, 0 1" data-lax-anchor="self">Etik</h1>
       </section>
 
-      <section class="fullpage" id="etik1">
+      <section class="fullpage article" id="etik1">
         <h1 class="text-center p-5">Etik</h1>
 
-        <p class="text-center p-border">Diskussion</p>
-        <p class="text-center p-border">Beställarens juridiska ansvar, systemutvecklarens moraliska plikt?</p>
+				<p class="text-center p-border">White (refererad i Gulliksson & Holmgren, 2018) som är professor i affärsetik
+					menar att man bör hålla sig till den konsekvensetiska principen och den pliktetiska principen, då dessa kompletterar
+					varandra. För att lösa ett dilemma kan man använda sig av tre steg:</p>
+
+				<p class="text-left p-border"><b>1. Analysera konsekvenserna</b></p>
+				<p class="text-justify p-border"> Vem tjänar respektive förlorar på de olika valen? Vilken typ av vinst gäller det?
+					Ändras resultaten om man ser det ur ett lokalt eller globalt perspektiv samt lång- eller kortsiktigt?</p>
+
+				<p class="text-left p-border"><b>2. Analysera handlingarna</b></p>
+				<p class="text-justify p-border">Utan att ta hänsyn till konsekvenser: Är det en rättvis och ärlig handling både i
+					det aktuella fallet och oberoende av fallet i sig? Riskeras någons rättigheter eller integritet? Stödjer den jämlikhet?</p>
+
+				<p class="text-left p-border"><b>3. Fatta beslut</b></p>
+				<p class="text-justify p-border">Basera beslutet beroende på vad som framkommer under steg ett och två.
+					Stå för konsekvenserna av detta beslut (Gulliksson & Holmgren, 2018).</p>
+
 
       </section>
 
-			<section class="fullpage" id="etik2">
+			<section class="fullpage article" id="etik2">
 				<h3 class="text-justify p-border-top">The Software Engineering Code of Ethics and Professional Practice</h1>
 				<p class="text-justify p-border-top">1.03. Approve software only if they have a well-founded belief that it is safe, meets specifications, passes appropriate tests, and does not diminish quality of life, diminish privacy or harm the environment. The ultimate effect of the work should be to the public good.</p>
 				<p class="text-justify p-border">1.04. Disclose to appropriate persons or authorities any actual or potential danger to the user, the public, or the environment, that they reasonably believe to be associated with software or related documents.</p>
@@ -194,7 +232,7 @@
 
 
 
-      <section class="fullpage" id="referenser">
+      <section class="fullpage article" id="referenser">
         <h1 class="text-center p-5">Referenser</h1>
 
         <p class="text-center p-border">Referens 1</p>
@@ -257,6 +295,14 @@
 		  </div>
 		</div>
 
+		<div id="btnMenu" onclick="ClickMenu()">
+			<p class="text-uppercase text-center">Menu</p>
+		</div>
+
+		<div id="btnCloseMenu" onclick="CloseMenu()">
+			<p class="text-uppercase text-center">X</p>
+		</div>
+
 
     <script>
       window.onload = function() {
@@ -272,6 +318,30 @@
       }
     </script>
 
+
+		<!-- för navbar -->
+		<script>
+			function ClickMenu() {
+				document.getElementById("nav").style.display = "block";
+				document.getElementById("btnMenu").style.display = "none";
+				document.getElementById("btnCloseMenu").style.display = "block";
+			}
+
+			function CloseMenu() {
+				document.getElementById("nav").style.display = "none";
+				document.getElementById("btnMenu").style.display = "block";
+				document.getElementById("btnCloseMenu").style.display = "none";
+			}
+
+			function CloseMenuScreen() {
+				if (screen.width <= 700) {
+					console.log("screen is smaller than 700px");
+					document.getElementById("nav").style.display = "none";
+					document.getElementById("btnMenu").style.display = "block";
+					document.getElementById("btnCloseMenu").style.display = "none";
+				}
+			}
+		</script>
 
 
 
