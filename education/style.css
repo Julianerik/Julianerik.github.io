@@ -75,6 +75,12 @@ html
   padding-right: 5vw;
 }
 
+.p-border-ref {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
 .modal-bg {
   background-color: #251D27;
 }
@@ -135,6 +141,10 @@ html
     padding-top: 5vh;
     padding-left: 28vw;
     padding-right: 28vw;
+  }
+
+  .p-border-ref {
+    padding-left: 28vw;
   }
 
   #btnMenu {
