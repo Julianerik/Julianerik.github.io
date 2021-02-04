@@ -114,3 +114,5 @@ applyStyle();
 BREAKBTN.addEventListener("click", addBreak);
 SLEEPBTN.addEventListener("click", startSleep);
 WAKEUPBTN.addEventListener("click", stopSleep);
+
+document.getElementById("data").innerText = JSON.stringify(dataStorageObject);
