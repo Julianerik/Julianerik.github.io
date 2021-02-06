@@ -9,9 +9,6 @@ let night = {};
 //counter för antal uppvak
 let numberOfBreaks = 0;
 
-//Tidsobjekt
-let currentTime = new Date();
-
 //db-variabler
 let db = window.localStorage;
 
@@ -40,7 +37,7 @@ else {
 
 //Funktion för att starta sömn
 function startSleep() {
-    night["sleepStart"] = currentTime.getTime();
+    night["sleepStart"] = Date.now();
     isSleeping = true;
     applyStyle();
 }
@@ -50,7 +47,7 @@ function addBreak() {
     
     let propName = "breakNr" + numberOfBreaks;
 
-    night[propName] = currentTime.getTime();
+    night[propName] = Date.now();
     
     numberOfBreaks++;
 
@@ -60,7 +57,7 @@ function addBreak() {
 
 //Funktion för att avsluta sömn
 function stopSleep() {
-    night["sleepStop"] = currentTime.getTime();
+    night["sleepStop"] = Date.now;
     isSleeping = false;
     saveToDb();
     applyStyle();

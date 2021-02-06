@@ -35,8 +35,9 @@ function buildNightObject(nObj) {
         let breakTime = new Date(objProps[i][1])
         let breakTimeHour = breakTime.getHours();
         let breakMinutes = breakTime.getMinutes();
+        let breakSeconds = breakTime.getSeconds();
 
-        let displayTime = breakTimeHour + ":" + breakMinutes;
+        let displayTime = breakTimeHour + ":" + breakMinutes + ":" + breakSeconds;
 
         breakInfo.innerText = displayTime;
         nightDiv.appendChild(breakInfo);
@@ -54,7 +55,7 @@ for (let i = 0; i < nightObjects.length; i++) {
     let nightObject = {};
     let logDate = new Date(nightObjects[i].sleepStart);
     let logDateDay = ('0' + logDate.getDate());
-    let logDateMonth = ('0' + logDate.getMonth());
+    let logDateMonth = ('0' + (logDate.getMonth() + 1));
     let logDateYear = (logDate.getFullYear());
     
     nightObject.date = logDateDay + "/" + logDateMonth + "/" + logDateYear; 
@@ -86,3 +87,5 @@ for (let i = 0; i < nightObjects.length; i++) {
 }
 
 
+//Problem som kvarstår
+//Varför norpar den tiden som 06/01/2021?
