@@ -78,12 +78,11 @@ for (let i = 0; i < nightObjects.length; i++) {
 
         if (objProps.length != 0) {
             nightObject[objProps[j][0]] = objProps[j][1];
+            buildNightObject(nightObject);
         }
 
     }
 
-    
-    buildNightObject(nightObject);
 }
 
 
