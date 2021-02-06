@@ -22,9 +22,6 @@ let key = "sleepTracker";
 let isSleeping = false;
 
 //Måste sätta upp ett typ, datastorageobject
-let dataStorageObject = {
-    nights: []
-};
 
 //currentData borde redan innehålla 
 let currentData = db.getItem(key);
@@ -115,4 +112,4 @@ BREAKBTN.addEventListener("click", addBreak);
 SLEEPBTN.addEventListener("click", startSleep);
 WAKEUPBTN.addEventListener("click", stopSleep);
 
-document.getElementById("data").innerText = JSON.stringify(dataStorageObject);
+//document.getElementById("fan").innerText = JSON.stringify(dataStorageObject);
