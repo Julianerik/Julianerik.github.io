@@ -22,6 +22,9 @@ let key = "sleepTracker";
 let isSleeping = false;
 
 //Måste sätta upp ett typ, datastorageobject
+let dataStorageObject = {
+    nights: []
+};
 
 //currentData borde redan innehålla 
 let currentData = db.getItem(key);
