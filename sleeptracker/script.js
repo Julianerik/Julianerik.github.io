@@ -2,6 +2,7 @@
 const SLEEPBTN = document.getElementById("start-sleep");
 const BREAKBTN = document.getElementById("break");
 const WAKEUPBTN = document.getElementById("wake-up");
+const BODY = document.getElementById("body")
 
 //objekt
 let night = {};
@@ -97,12 +98,16 @@ function applyStyle() {
 
         BREAKBTN.style.display = "inline";
         WAKEUPBTN.style.display = "inline";
+
+        BODY.setAttribute("class", "nightcolor")
     }
     else {
         BREAKBTN.style.display = "none";
         WAKEUPBTN.style.display = "none";
 
         SLEEPBTN.style.display = "inline";
+
+        BODY.setAttribute("class", "daycolor")
     }
 }
 applyStyle();
@@ -112,4 +117,3 @@ BREAKBTN.addEventListener("click", addBreak);
 SLEEPBTN.addEventListener("click", startSleep);
 WAKEUPBTN.addEventListener("click", stopSleep);
 
-//document.getElementById("fan").innerText = JSON.stringify(dataStorageObject);

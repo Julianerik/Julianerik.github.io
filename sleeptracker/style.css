@@ -1,9 +1,26 @@
 body {
-    background-color: #85dcb8;
     width: 100vw;
     height: 100vh;
-    position: relative;
-};
+    -webkit-transition: background-color 2s ease;
+   -moz-transition: background-color 2s ease;
+   -o-transition: background-color 2s ease;
+   transition: background-color 2s ease;  
+   font-family: luminari;
+   color: whitesmoke;
+}
+
+.daycolor {
+    /*background: linear-gradient(180deg, #01426D, #58bbfc);
+    background-size: 200% 200%;*/
+    background-color: #01426D;
+}
+
+.nightcolor {
+    /*background: linear-gradient(180deg, #02162d, #01426D);
+    background-size: 200% 200%;*/
+    background-color: #02162d;
+
+}
 
 .main-view {
     width: 100%;
@@ -14,12 +31,16 @@ body {
 
 button {
     position: relative;
+    font-family: luminari;
+    text-transform: uppercase;
+    font-size: large;
     width: 80%;
     height: 20vh;
-    background-color: aliceblue;
     margin-left: 10vw;
     margin-top: 20%;
     margin-bottom: 50%;
+    background-color: rgb(198, 198, 242);
+    font-style: 
 };
 
 #night-data {

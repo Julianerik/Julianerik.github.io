@@ -15,6 +15,13 @@ else {
     dataStorageObject = JSON.parse(currentData);
 };*/
 
+function parseNumber(num) {
+    if (num < 10) {
+        num = "0" + num;
+    }
+    return num;
+}
+
 function buildNightObject(nObj) {
     let nightDiv = document.createElement("div");
     nightDiv.setAttribute("class", "nightDiv");
@@ -22,6 +29,10 @@ function buildNightObject(nObj) {
     let nightDate = document.createElement("h1");
     nightDate.innerText = nObj.date;
     nightDiv.appendChild(nightDate);
+
+    let nightSleepStart = document.createElement("h2");
+    nightSleepStart.innerText = "Went to sleep: " + nObj.sleepStart
+    nightDiv.appendChild(nightSleepStart);
 
     let objProps = Object.entries(nObj);
     for (let i = 0; i < objProps.length; i++) {
@@ -31,13 +42,19 @@ function buildNightObject(nObj) {
     };
 
     for (let i = 0; i < objProps.length; i++) {
-        let breakInfo = document.createElement("h2");
-        let breakTime = new Date(objProps[i][1])
-        let breakTimeHour = breakTime.getHours();
-        let breakMinutes = breakTime.getMinutes();
-        let breakSeconds = breakTime.getSeconds();
+        if (objProps[i][0] == "sleepStart") {
+            objProps.splice([i], 1);
+        };
+    };
 
-        let displayTime = breakTimeHour + ":" + breakMinutes + ":" + breakSeconds;
+    for (let i = 0; i < objProps.length; i++) {
+        let breakInfo = document.createElement("h3");
+        let breakTime = new Date(objProps[i][1])
+        let breakTimeHour = parseNumber(breakTime.getHours());
+        let breakMinutes = parseNumber(breakTime.getMinutes());
+        let breakSeconds = parseNumber(breakTime.getSeconds());
+
+        let displayTime = "Woke up at: " + breakTimeHour + ":" + breakMinutes + ":" + breakSeconds;
 
         breakInfo.innerText = displayTime;
         nightDiv.appendChild(breakInfo);
@@ -49,16 +66,18 @@ function buildNightObject(nObj) {
 
 
 let nightObjects = dataStorageObject.nights;
-console.log(nightObjects);
 
 for (let i = 0; i < nightObjects.length; i++) {
     let nightObject = {};
     let logDate = new Date(nightObjects[i].sleepStart);
-    let logDateDay = ('0' + logDate.getDate());
-    let logDateMonth = ('0' + (logDate.getMonth() + 1));
-    let logDateYear = (logDate.getFullYear());
-    
+    let logDateDay = parseNumber(logDate.getDate());
+    let logDateMonth = parseNumber(logDate.getMonth() + 1);
+    let logDateYear = parseNumber(logDate.getFullYear());
+    let logSleepStartHour = parseNumber(logDate.getHours());
+    let logSleepStartMinute = parseNumber(logDate.getMinutes());
+
     nightObject.date = logDateDay + "/" + logDateMonth + "/" + logDateYear; 
+    nightObject.sleepStart = logSleepStartHour + ":" + logSleepStartMinute;
     
     //Här måste man komma på en loop för varje property 
     //och sedan plockar bort första och sista
@@ -71,21 +90,29 @@ for (let i = 0; i < nightObjects.length; i++) {
         if (objProps[j][0] == "sleepStart") {
             objProps.splice(j, 1);
         }
-        if (objProps[j][0] == "sleepStop") {
-            objProps.splice(j, 1);
-        }
-    
-        console.log("objprops length = " + objProps.length);
-
-        if (objProps.length != 0) {
-            nightObject[objProps[j][0]] = objProps[j][1];
-            buildNightObject(nightObject);
-        }
-
     }
+
+
+    //var tvungen att separera dessa för att det inte skulle bli fel i konsollen
+    //Ta även och lägg till sleepstop innan borttagning
+    for (let j = 0; j < objProps.length; j++) {
+        if (objProps[j][0] == "sleepStop") {
+            nightObject[objProps[j][0]] = objProps[j][1];
+            objProps.splice(j, 1);
+        }        
+    }
+
+    if (objProps.length != 0) {
+        for (let j = 0; j < objProps.length; j++) {
+            nightObject[objProps[j][0]] = objProps[j][1];      
+        }
+    }
+
+    buildNightObject(nightObject);
 
 }
 
 
 //Problem som kvarstår
-//Varför norpar den tiden som 06/01/2021?
+//har fortfarande problem att läsa tomma arrays
+//Chrome på PC och MAC läser errors olika.
