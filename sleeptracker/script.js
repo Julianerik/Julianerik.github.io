@@ -58,7 +58,7 @@ function addBreak() {
 
 //Funktion för att avsluta sömn
 function stopSleep() {
-    night["sleepStop"] = Date.now;
+    night["sleepStop"] = Date.now();
     isSleeping = false;
     saveToDb();
     applyStyle();

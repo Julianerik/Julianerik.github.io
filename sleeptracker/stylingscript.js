@@ -47,6 +47,16 @@ function buildNightObject(nObj) {
         };
     };
 
+    let wokeUp = document.createElement("h2");
+
+    for (let i = 0; i < objProps.length; i++) {
+        if (objProps[i][0] == "sleepStop") {
+            wokeUp.innerText = "Stopped sleeping: " + objProps[i][1];
+            objProps.splice([i], 1);
+        }
+        
+    }
+
     for (let i = 0; i < objProps.length; i++) {
         let breakInfo = document.createElement("h3");
         let breakTime = new Date(objProps[i][1])
@@ -59,6 +69,7 @@ function buildNightObject(nObj) {
         breakInfo.innerText = displayTime;
         nightDiv.appendChild(breakInfo);
     }
+    nightDiv.appendChild(wokeUp);
 
     document.getElementById("night-data").appendChild(nightDiv);
 }
@@ -97,7 +108,12 @@ for (let i = 0; i < nightObjects.length; i++) {
     //Ta även och lägg till sleepstop innan borttagning
     for (let j = 0; j < objProps.length; j++) {
         if (objProps[j][0] == "sleepStop") {
-            nightObject[objProps[j][0]] = objProps[j][1];
+            let sleepStartDate = new Date(objProps[j][1]);
+            let sleepStarHour = sleepStartDate.getHours();
+            let sleepstartMinute = sleepStartDate.getMinutes();
+            let sleepStartSec = sleepStartDate.getSeconds();
+
+            nightObject[objProps[j][0]] = sleepStarHour + ":" + sleepstartMinute + ":" + sleepStartSec;
             objProps.splice(j, 1);
         }        
     }
