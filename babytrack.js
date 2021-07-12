@@ -16,7 +16,6 @@ let currentDataParsed = JSON.parse(currentData);
 function printToSreen() {
     let display = document.getElementById('displayDiv');
 
-    console.log(display);
     let numberOfItems = currentDataParsed.db.length-1;
 
     let latestDate = currentDataParsed.db[numberOfItems].time;
@@ -25,15 +24,16 @@ function printToSreen() {
 
     let displayHour = (parsedDate.getHours() < 10) ? '0' + parsedDate.getHours() : parsedDate.getHours();
 
-    let displayDate = displayHour + ':' + parsedDate.getMinutes();
+    let displayMin = (parsedDate.getMinutes() < 10) ? '0' + parsedDate.getMinutes() : parsedDate.getMinutes(); 
+
+    let displayDate = displayHour + ':' + displayMin;
 
     let displayHeader = document.createElement('h1');
 
     displayHeader.innerText = displayDate;
-    document.body.appendChild(displayHeader);
+    display.appendChild(displayHeader);
 }
 
-printToSreen();
 
 
 function addData(newItem) {
@@ -41,6 +41,14 @@ function addData(newItem) {
 
     db.setItem(dbKey, JSON.stringify(currentDataParsed));
 };
+
+
+function clearDiv() {
+    let display = document.getElementById('displayDiv');
+
+    display.innerText = '';
+
+}
 
 function logTime() {
     let currentDate = new Date();
@@ -51,5 +59,10 @@ function logTime() {
         time: unixTime  
     };
     addData(newItem);
+    clearDiv();
+    printToSreen();
 };
+
+
+printToSreen();
 
